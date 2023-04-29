@@ -14,12 +14,14 @@
 }
 
 body {
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 
     /* Typography */
-    font-size: 1.125rem;
+    font-size: 0.75rem;
     font-family: var(--font-primary);
     color: var(--greyish-blue);
 
@@ -31,10 +33,28 @@ body {
 }
 
 main {
+    display: grid;
+    justify-items: center;
     background-color: #ffff;
     overflow: hidden;
+    text-align: center;
     border-radius: 15px;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
+
+h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.pro
 
 
 /* Attributions */

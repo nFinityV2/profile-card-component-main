@@ -14,10 +14,8 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     min-height: 100vh;
 
     /* Typography */
@@ -29,12 +27,10 @@ body {
     background-color: var(--dark-cyan);
     background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: right 35vw bottom 50vh, left 35vw top 50vh;
+    background-position: right 40vw bottom 50vh, left 40vw top 50vh;
 }
 
 main {
-    display: grid;
-    justify-items: center;
     background-color: #ffff;
     overflow: hidden;
     text-align: center;
@@ -54,6 +50,11 @@ h2 {
     font-weight: 400;
 }
 
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .profile-img {
     border-radius: 50%;
     border: 5px solid white;
@@ -65,11 +66,6 @@ h2 {
 .age {
     font-weight: 400;
     color: var(--greyish-blue);
-}
-
-.stats {
-    display: flex;
-    gap: 4em;
 }
 
 /* Attributions */
